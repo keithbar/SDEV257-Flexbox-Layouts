@@ -7,6 +7,7 @@ import styles from "./styles";
 import Box from "./Box";
 import Column from "./Column";
 import Row from "./Row";
+import { registerRootComponent } from 'expo';
 
 // Number of boxes to render. Change this to change how many boxes are on screen.
 const numBoxes = 12;
@@ -42,3 +43,5 @@ export default function App() {
     </View>
   );
 }
+
+registerRootComponent(App);
